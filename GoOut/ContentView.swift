@@ -1,4 +1,5 @@
 //
+
 //  ContentView.swift
 //  GoOut
 //
@@ -6,14 +7,16 @@
 //
 
 import SwiftUI
-import MapKit
+import MapKit  // Importando biblioteca do mapa
 
 struct ContentView: View {
     var body: some View {
         VStack {
-            Map()
+            Map()   // Inicializando o mapa
         }
+        .mapStyle(.hybrid(elevation: .flat))  // Estilizando o mapa
     }
+
 }
 
 #Preview {
