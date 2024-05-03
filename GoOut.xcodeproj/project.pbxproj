@@ -32,6 +32,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE75F8CE2BE51E6D002033BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE75F8CF2BE51E99002033BF /* Helpers   */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Helpers  ";
+			sourceTree = "<group>";
+		};
 		CEC0D7792BE10EC200D8F118 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +65,8 @@
 		CEC0D7842BE10EC200D8F118 /* GoOut */ = {
 			isa = PBXGroup;
 			children = (
+				CE75F8CF2BE51E99002033BF /* Helpers   */,
+				CE75F8CE2BE51E6D002033BF /* View */,
 				CEC0D7852BE10EC200D8F118 /* GoOutApp.swift */,
 				CEC0D7872BE10EC200D8F118 /* ContentView.swift */,
 				CEC0D7892BE10EC300D8F118 /* Assets.xcassets */,
