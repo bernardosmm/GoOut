@@ -7,16 +7,19 @@
 //
 
 import SwiftUI
-import MapKit  // Importando biblioteca do mapa
+import MapKit
+import CoreLocation
 
 struct ContentView: View {
+    @State private var isSheetPresented = false
+    @State private var name = ""
+    let praiaDoNautico = CLLocationCoordinate2D(latitude: -3.7246985883163584, longitude: -38.491181818998)
     var body: some View {
-        VStack {
-            Map()   // Inicializando o mapa
+        Map() {
+            Marker("Passeio de Caiaque", coordinate: praiaDoNautico)
+                .tint(.yellow)
         }
-        .mapStyle(.hybrid(elevation: .flat))  // Estilizando o mapa
     }
-
 }
 
 #Preview {
