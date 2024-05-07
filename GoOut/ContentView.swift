@@ -11,13 +11,15 @@ import MapKit
 import CoreLocation
 
 struct ContentView: View {
-    @State private var isSheetPresented = false
-    @State private var name = ""
-    let praiaDoNautico = CLLocationCoordinate2D(latitude: -3.7246985883163584, longitude: -38.491181818998)
+    @State private var cameraPosition: MapCameraPosition = .automatic
     var body: some View {
-        Map() {
-            Marker("Passeio de Caiaque", coordinate: praiaDoNautico)
-                .tint(.yellow)
+        Map(position: $cameraPosition)
+            .onAppear{
+                //-3.731478, -38.531036
+                let fortaleza = CLLocationCoordinate2D(latitude: -3.731478, longitude: -38.531036)
+                let fortalezaSpan = MKCoordinateSpan(latitudeDelta: 0.15, longitudeDelta: 0.15)
+                let fortalezaRegion = MKCoordinateRegion(center: fortaleza, span: fortalezaSpan)
+                cameraPosition = .region(fortalezaRegion)
         }
     }
 }
