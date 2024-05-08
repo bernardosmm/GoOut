@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55E04B982BEBAEC500632DD0 /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E04B972BEBAEC500632DD0 /* FirstScreen.swift */; };
 		CEC0D7862BE10EC200D8F118 /* GoOutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0D7852BE10EC200D8F118 /* GoOutApp.swift */; };
 		CEC0D7882BE10EC200D8F118 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0D7872BE10EC200D8F118 /* ContentView.swift */; };
 		CEC0D78A2BE10EC300D8F118 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC0D7892BE10EC300D8F118 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		55E04B972BEBAEC500632DD0 /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
 		CEC0D7822BE10EC200D8F118 /* GoOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC0D7852BE10EC200D8F118 /* GoOutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoOutApp.swift; sourceTree = "<group>"; };
 		CEC0D7872BE10EC200D8F118 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				CE75F8CF2BE51E99002033BF /* Helpers   */,
 				CE75F8CE2BE51E6D002033BF /* View */,
 				CEC0D7852BE10EC200D8F118 /* GoOutApp.swift */,
+				55E04B972BEBAEC500632DD0 /* FirstScreen.swift */,
 				CEC0D7872BE10EC200D8F118 /* ContentView.swift */,
 				CEC0D7892BE10EC300D8F118 /* Assets.xcassets */,
 				CEC0D78B2BE10EC300D8F118 /* Preview Content */,
@@ -159,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55E04B982BEBAEC500632DD0 /* FirstScreen.swift in Sources */,
 				CEC0D7882BE10EC200D8F118 /* ContentView.swift in Sources */,
 				CEC0D7862BE10EC200D8F118 /* GoOutApp.swift in Sources */,
 			);
