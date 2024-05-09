@@ -95,22 +95,22 @@ struct FirstScreen: View {
 //            }
 
 #Preview {
-    PreviewMapView() // View do Bernardo com Pedro
+    ContentView() // View do Bernardo com Pedro
         .sheet(isPresented: .constant(true)) {
             FirstScreen() // Minha View
                 .presentationDetents([.height(60), .medium, .large])
         }
 }
 
-struct PreviewMapView: View {
-    var body: some View {
-        Map(initialPosition: .region(region))
-    }
-    
-    private var region: MKCoordinateRegion {
-        MKCoordinateRegion(
-            center: CLLocationCoordinate2D(latitude: -3.7442604368944856, longitude: -38.53568772387148),
-            span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
-        )
-    }
-}
+//struct PreviewMapView: View {
+//    var body: some View {
+//        Map(initialPosition: .region(region))
+//    }
+//    
+//    private var region: MKCoordinateRegion {
+//        MKCoordinateRegion(
+//            center: CLLocationCoordinate2D(latitude: -3.7442604368944856, longitude: -38.53568772387148),
+//            span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
+//        )
+//    }
+
