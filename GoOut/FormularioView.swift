@@ -9,6 +9,8 @@ import SwiftUI
 
 struct FormularioView: View {
     
+    @Environment(\.dismiss) var dismiss
+    
     @State private var date = Date()
     let dateRange: ClosedRange<Date> = {
         let calendar = Calendar.current
@@ -81,12 +83,14 @@ struct FormularioView: View {
                         Text("Data do Evento")
                             .bold()
                             .foregroundStyle(.gray)
+                        Spacer()
                         DatePicker(
-                            "",
+                            "Data do Evento",
                             selection: $date,
                             in: dateRange,
                             displayedComponents: [.date]
                         )
+                        .labelsHidden()
                     }
                     
                     //Row horário do eventp
@@ -94,32 +98,38 @@ struct FormularioView: View {
                         Text("Horário do Evento")
                             .bold()
                             .foregroundStyle(.gray)
+                        Spacer()
                         DatePicker(
-                            "",
+                            "Inicio",
                             selection: $date,
                             in: dateRange,
                             displayedComponents: [.hourAndMinute]
                         )
+                        .labelsHidden()
+                        RoundedRectangle(cornerRadius: 25.0)
+                            .frame(width: 50, height: 10)
+                            .foregroundStyle(.gray)
                         DatePicker(
-                            "",
+                            "Fim",
                             selection: $date,
                             in: dateRange,
                             displayedComponents: [.hourAndMinute]
                         )
+                        .labelsHidden()
                     }
                     
-                    // Row imagens
-                    VStack(alignment: .leading) {
-                        Text("Imagem")
-                            .bold()
-                            .foregroundStyle(.gray)
-                        TextField("Av. Treze de Maio, 2081", text: .constant(""))
-                            .padding()
-                            .background {
-                                RoundedRectangle(cornerRadius: 11)
-                                    .fill(.white)
-                            }
-                    }
+                    //                    // Row imagens
+                    //                    VStack(alignment: .leading) {
+                    //                        Text("Imagem")
+                    //                            .bold()
+                    //                            .foregroundStyle(.gray)
+                    //                        TextField("Av. Treze de Maio, 2081", text: .constant(""))
+                    //                            .padding()
+                    //                            .background {
+                    //                                RoundedRectangle(cornerRadius: 11)
+                    //                                    .fill(.white)
+                    //                            }
+                    //                    }
                     // Row link de comunidade
                     VStack(alignment: .leading) {
                         Text("Link da Comunidade")
@@ -141,14 +151,28 @@ struct FormularioView: View {
             .background(Color(uiColor: .secondarySystemBackground))
             .navigationTitle("Criar Evento")
             .navigationBarTitleDisplayMode(.inline)
-
+            .toolbar {
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("Cancelar") {
+                        dismiss()
+                    }
+                }
+                ToolbarItem(placement: .confirmationAction) {
+                    Button("Salvar") {
+                        
+                    }
+                }
+            }
+            .interactiveDismissDisabled(true)
         }
     }
 }
 
 #Preview {
     ContentView()
-        .sheet(isPresented: .constant(true), content: {
+        .sheet(isPresented: .constant(true),
+               content: {
             FormularioView()
-        })
+        }
+        )
 }
