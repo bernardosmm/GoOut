@@ -51,7 +51,7 @@ import MapKit  // Importando biblioteca do mapa
 struct FirstScreen: View {
     
     @State var flag: Bool = false
-    @State var detents: PresentationDetent = .height(10)
+    @State var detents: PresentationDetent = .height(100)
 //    @State var searchText = ""
 //    @State var seacrhIsActive = false
     
@@ -59,7 +59,7 @@ struct FirstScreen: View {
         NavigationStack {
         }
         .searchable(text: .constant("Procure por um evento.."))
-        .presentationDetents([.height(30), .medium], selection: $detents)
+        .presentationDetents([.height(60), .medium], selection: $detents)
     }
 }
 //        .searchable(text: .constant("search here"))
@@ -98,7 +98,7 @@ struct FirstScreen: View {
     PreviewMapView() // View do Bernardo com Pedro
         .sheet(isPresented: .constant(true)) {
             FirstScreen() // Minha View
-                .presentationDetents([.height(100), .medium])
+                .presentationDetents([.height(60), .medium, .large])
         }
 }
 
