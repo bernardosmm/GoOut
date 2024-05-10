@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		55E04B982BEBAEC500632DD0 /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E04B972BEBAEC500632DD0 /* FirstScreen.swift */; };
+		55E5EB132BED14A0006DA47D /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E5EB122BED14A0006DA47D /* SearchBar.swift */; };
 		CEC0D7862BE10EC200D8F118 /* GoOutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0D7852BE10EC200D8F118 /* GoOutApp.swift */; };
 		CEC0D7882BE10EC200D8F118 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0D7872BE10EC200D8F118 /* ContentView.swift */; };
 		CEC0D78A2BE10EC300D8F118 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC0D7892BE10EC300D8F118 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		55E04B972BEBAEC500632DD0 /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
+		55E5EB122BED14A0006DA47D /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		CEC0D7822BE10EC200D8F118 /* GoOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC0D7852BE10EC200D8F118 /* GoOutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoOutApp.swift; sourceTree = "<group>"; };
 		CEC0D7872BE10EC200D8F118 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				CE75F8CE2BE51E6D002033BF /* View */,
 				CEC0D7852BE10EC200D8F118 /* GoOutApp.swift */,
 				55E04B972BEBAEC500632DD0 /* FirstScreen.swift */,
+				55E5EB122BED14A0006DA47D /* SearchBar.swift */,
 				CEC0D7872BE10EC200D8F118 /* ContentView.swift */,
 				CEC0D7892BE10EC300D8F118 /* Assets.xcassets */,
 				CEC0D78B2BE10EC300D8F118 /* Preview Content */,
@@ -167,6 +170,7 @@
 			files = (
 				D83946672BEBBD380038BFED /* Locations.swift in Sources */,
 				55E04B982BEBAEC500632DD0 /* FirstScreen.swift in Sources */,
+				55E5EB132BED14A0006DA47D /* SearchBar.swift in Sources */,
 				CEC0D7882BE10EC200D8F118 /* ContentView.swift in Sources */,
 				CEC0D7862BE10EC200D8F118 /* GoOutApp.swift in Sources */,
 			);
