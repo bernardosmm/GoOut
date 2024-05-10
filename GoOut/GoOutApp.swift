@@ -13,10 +13,10 @@ struct GoOutApp: App {
         WindowGroup {
             ContentView()
 //            PreviewMapView() // View do Bernardo com Pedro
-                .sheet(isPresented: .constant(true)) {
-                    FirstScreen() // Minha View
-                        .presentationDetents([.height(100), .medium])
-                }
+             //   .sheet(isPresented: .constant(true)) {
+         //           FirstScreen() // Minha View
+//                        .presentationDetents([.height(100), .medium])
+//                }
         }
     }
 }
