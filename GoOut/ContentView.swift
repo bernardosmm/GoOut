@@ -29,8 +29,8 @@ struct ContentView: View {
         }
         .mapStyle(.standard(elevation: .flat))  // Estilizando o mapa
     }
-
 }
+
 
 #Preview {
     ContentView()
