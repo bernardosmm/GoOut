@@ -2,6 +2,7 @@ import SwiftUI
 import MapKit
 
 struct ContentView: View {
+    
     @State private var position = MapCameraPosition.region(
         MKCoordinateRegion(
             center: CLLocationCoordinate2D(latitude: -3.731478, longitude: -38.531036),

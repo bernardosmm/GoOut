@@ -138,7 +138,8 @@ struct FormularioView: View {
                         Text("Preço")
                             .bold()
                             .foregroundStyle(.gray)
-                        TextField("Gratuito, até 50,00$", text: .constant(""))
+                        TextField("Valor gasto para a participação", text: .constant(""))
+                            .keyboardType(.decimalPad)
                             .padding()
                             .background {
                                 RoundedRectangle(cornerRadius: 11)
