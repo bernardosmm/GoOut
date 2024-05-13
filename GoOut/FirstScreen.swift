@@ -12,7 +12,7 @@ import MapKit  // Importando biblioteca do mapa
 struct FirstScreen: View {
     
     @State var flag: Bool = false
-    @State var detents: PresentationDetent = .height(60)
+    @State var detents: PresentationDetent = .medium//.height(60)
     @Binding var searchText: String
     
     var body: some View {
@@ -20,13 +20,50 @@ struct FirstScreen: View {
             VStack {
                 SearchBar(searchText: $searchText)
                 List {
-                    if self.detents != .height(60) {
+                    // Inicio Criados
+                    Group {
+                        Section {
+                            VStack {
+                                CircleImage()
+                            } .padding(10)
+                        } header: {
+                            HStack {
+                                Text("Criados")
+                                    .font(.system(size: 20))
+                                    .bold()
+                                Spacer()
+                                Button("Mais") {
+                                }
+                                .font(.system(size: 20))
+                            }
+                        }
+                        .textCase(nil)
                     }
-                    //                else {
-                    //                    Text("B")
-                    //                }
+                    .listRowSeparator(.hidden)
+                 // Início favoritos
+                    Group {
+                        Section {
+                            VStack {
+                                FavoritosImage()
+                            } .padding(10)
+                        } header: {
+                            HStack {
+                                Text("Favoritos")
+                                    .font(.system(size: 20))
+                                    .bold()
+                                Spacer()
+                                Button("Mais") {
+                                    
+                                }
+                                .font(.system(size: 20))
+                            }
+                        }
+                        .textCase(nil)
+                    }
+                    .listRowSeparator(.hidden)
                 }
-                .listStyle(.plain)
+                .listStyle(.insetGrouped)
+                .opacity(self.detents != .height(60) ? 1 : 0)
             }
         }
         .presentationDetents([.height(60), .medium], selection: $detents)

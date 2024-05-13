@@ -25,8 +25,9 @@ struct SearchBar: View {
                     )
                 TextField("Pesquise um evento...", text: $searchText)
                     .focused($isFocused)
+                    .font(.system(size: 20))
             }
-            .frame(maxWidth: .infinity, minHeight: 35)
+            .frame(maxWidth: .infinity, minHeight: 40)
             .background(Color(white: 0.9))
             .cornerRadius(10)
             
