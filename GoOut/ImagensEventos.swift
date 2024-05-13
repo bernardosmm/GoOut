@@ -79,3 +79,28 @@ struct Feira2: View {
             .shadow(radius: 1)
     }
 }
+struct HappyHour: View {
+    var body: some View {
+        Image("happyhourfoto1")
+            .resizable()
+            .frame(width: 156, height: 201)
+            .shadow(radius: 1)
+    }
+}
+struct HappyHour1: View {
+    var body: some View {
+        Image("happyhourfoto2")
+            .resizable()
+            .frame(width: 156, height: 201)
+            .shadow(radius: 1)
+    }
+}
+struct HappyHour2: View {
+    var body: some View {
+        Image("happyhourfoto3")
+            .resizable()
+            .frame(width: 156, height: 201)
+            .shadow(radius: 1)
+    }
+}
+
