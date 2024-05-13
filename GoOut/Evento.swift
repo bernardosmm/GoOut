@@ -16,7 +16,7 @@ struct Evento: View {
     @State var detents: PresentationDetent = .height(398)
     //incluir acima os @States necessários
     var body: some View {
-        NavigationStack{
+        NavigationStack {
             List {
                 Group{
                     VStack{
@@ -113,8 +113,8 @@ struct Evento: View {
                                 .resizable()
                                 .frame(width: 42, height: 42)
                                 .padding(.top)
-                            Text ("Data")
-                            Text ("19/05/2024")
+                            Text("Data")
+                            Text("19/05/2024")
                                 .padding(.bottom)
                                 .font(.caption)
                         }
@@ -179,7 +179,7 @@ struct Evento: View {
                     }, label: {
                         Image(systemName: "star")
                             .padding(5)
-                            .background ( Circle()
+                            .background( Circle()
                                 .fill(.gray)
                                 .opacity(0.3))
                             .foregroundStyle(favorited ? .amarelo : .gray)

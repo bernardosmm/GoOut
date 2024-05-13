@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Caiaque: View {
     var body: some View {
-        Image("caiaque")
+        Image("caiaquefoto")
             .resizable()
             .frame(width: 156, height: 201)
             .shadow(radius: 1)
@@ -17,7 +17,7 @@ struct Caiaque: View {
 }
 struct Caiaque1: View {
     var body: some View {
-        Image("caiaque1")
+        Image("caiaquefoto2")
             .resizable()
             .frame(width: 156, height: 201)
             .shadow(radius: 1)
@@ -25,7 +25,7 @@ struct Caiaque1: View {
 }
 struct Caiaque2: View {
     var body: some View {
-        Image("caiaque2")
+        Image("caiaquefoto3")
             .resizable()
             .frame(width: 156, height: 201)
             .shadow(radius: 1)
