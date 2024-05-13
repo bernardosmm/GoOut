@@ -31,3 +31,52 @@ struct Caiaque2: View {
             .shadow(radius: 1)
     }
 }
+struct Trilha: View {
+    var body: some View {
+        Image("trilhafoto")
+            .resizable()
+            .frame(width: 156, height: 201)
+            .shadow(radius: 1)
+    }
+}
+struct Trilha1: View {
+    var body: some View {
+        Image("trilhafoto2")
+            .resizable()
+            .frame(width: 156, height: 201)
+            .shadow(radius: 1)
+    }
+}
+struct Trilha2: View {
+    var body: some View {
+        Image("trilhafoto3")
+            .resizable()
+            .frame(width: 156, height: 201)
+            .shadow(radius: 1)
+    }
+}
+struct Feira: View {
+    var body: some View {
+        Image("feirafoto1")
+            .resizable()
+            .frame(width: 156, height: 201)
+            .shadow(radius: 1)
+    }
+}
+struct Feira1: View {
+    var body: some View {
+        Image("feirafoto2")
+            .resizable()
+            .frame(width: 156, height: 201)
+            .shadow(radius: 1)
+    }
+}
+struct Feira2: View {
+    var body: some View {
+        Image("feirafoto3")
+            .resizable()
+            .frame(width: 156, height: 201)
+            .shadow(radius: 1)
+    }
+}
+

@@ -14,9 +14,6 @@ struct ContentView: View {
             .mapStyle(.standard(elevation: .flat))
     }
 }
-
-
-
 #Preview {
     ContentView()
 }

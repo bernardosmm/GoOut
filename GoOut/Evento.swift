@@ -18,11 +18,11 @@ struct Evento: View {
     var body: some View {
         NavigationStack {
             List {
-                Group{
-                    VStack{
+                Group {
+                    VStack {
                         Text("Espigão da João Cordeiro - Av. Beira Mar, 805-945 - Praia de Iracema, Fortaleza - CE,")
                     }
-                    HStack{
+                    HStack {
                         Image("pinverde")
                             .resizable()
                             .frame(width: 20, height: 25)
@@ -138,11 +138,11 @@ struct Evento: View {
                         .foregroundStyle(.white)
                     }
                     .padding(.horizontal)
-                    VStack{
+                    VStack {
                         Text("Detalhes do Passeio:")
                             .font(.headline)
                     }
-                    VStack{
+                    VStack {
                         Text("""
                         Um grupo de amigos está organizando um passeio de caiaque para residentes e turistas. Teremos um profissional treinado para orientar a atividade. Não recomendado para crianças menores de 10 anos.
                         A pré-confirmação via grupo do WhatsApp é obrigatória
@@ -150,11 +150,11 @@ struct Evento: View {
                         .font(.subheadline)
                         
                     }
-                    VStack{
+                    VStack {
                         Text("Vamos dar uma volta?")
                             .font(.headline)
                     }
-                    ZStack{
+                    ZStack {
                         RoundedRectangle(cornerRadius: 12, style: .continuous)
                             .foregroundStyle(.amarelo)
                             .frame(width: 370, height: 50)
