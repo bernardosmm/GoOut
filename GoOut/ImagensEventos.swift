@@ -79,4 +79,3 @@ struct Feira2: View {
             .shadow(radius: 1)
     }
 }
-

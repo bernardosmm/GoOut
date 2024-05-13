@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct EventoFeiraView: View {
-    
     @State var address = ""
     
     @State var favorited: Bool = false

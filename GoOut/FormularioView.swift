@@ -35,7 +35,6 @@ struct FormularioView: View {
     
     @State private var endDate = Date()
     
-    
     //    struct BackButton: View {
     //        let action: () -> Void
     //

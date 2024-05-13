@@ -88,8 +88,8 @@ struct EventoTrilhaView: View {
                             Trilha2()
                         }
                     }
-                    VStack(){
-                        Text ("Informações relevantes:")
+                    VStack() {
+                        Text("Informações relevantes:")
                             .font(.headline)
                     }
                     HStack(alignment: .center){

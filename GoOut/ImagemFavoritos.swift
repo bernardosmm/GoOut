@@ -10,7 +10,7 @@ import SwiftUI
 
 struct FavoritosImage: View {
     var body: some View {
-            VStack {
+        VStack {
                 Image("mais")
                     .resizable()
                     .frame(width: 40, height: 40)
