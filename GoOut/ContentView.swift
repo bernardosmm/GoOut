@@ -56,9 +56,9 @@ struct AddEventView: View {
     @State var lat = ""
     @State var long = ""
     @State var coordinates = ""
-    var location: CLLocation?
+    @State var location: CLLocation? = nil
     
-    mutating func forwardGeocoding(address: String) -> [Double?]{
+    func forwardGeocoding(address: String) -> [Double?]{
         let geocoder = CLGeocoder()
         var coord: [Double] = []
         geocoder.geocodeAddressString(address, completionHandler: { (placemarks, error) in
@@ -78,27 +78,27 @@ struct AddEventView: View {
                 return
             }
         })
-        print(location?.coordinate.latitude,location?.coordinate.longitude)
+        // print(location?.coordinate.latitude,location?.coordinate.longitude)
         return [location?.coordinate.latitude,location?.coordinate.longitude]
     }
     
     var body: some View {
         Form {
-            TextField("Event Name", text: $name)
-            TextField("Lat", text: $lat)
-            TextField("Long", text: $long)
+//            TextField("Event Name", text: $name)
+//            TextField("Lat", text: $lat)
+//            TextField("Long", text: $long)
             TextField("Address", text: $coordinates)
             
             let lati = Double(lat)
             let longi = Double(long)
             
-            var addresse = "1 Infinite Loop, CA, USA"
+            var addresse = "Liberdade, SP, BR"
             
-            let coordinates = forwardGeocoding(address: "1 Infinite Loop, CA, USA")
+            var coordi = forwardGeocoding(address: addresse)
             
                 Button("Salvar") {
-                    print(coordinates.count)
-                    locat.append(Locations(name: name, coordinate: CLLocationCoordinate2D(latitude: lati ?? 0.0, longitude: longi ?? 0.0)))
+//                    locat.append(Locations(name: name, coordinate: CLLocationCoordinate2D(latitude: lati ?? 0.0, longitude: longi ?? 0.0)))
+                    locat.append(Locations(name: "JSGDFJGFDS", coordinate: CLLocationCoordinate2D(latitude: coordi[0] ?? 0.0, longitude: coordi[1] ?? 0.0)))
                 }
             }
         }
