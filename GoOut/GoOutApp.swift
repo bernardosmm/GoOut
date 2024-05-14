@@ -11,7 +11,10 @@ import SwiftUI
 struct GoOutApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView() // View do Bernardo com Pedro
+                .sheet(isPresented: .constant(true)) {
+                    FirstScreen(searchText: .constant("")) // Minha View
+                }
         }
     }
 }
