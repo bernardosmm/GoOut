@@ -88,18 +88,18 @@ struct EventoHappyHour: View {
                             HappyHour2()
                         }
                     }
-                    VStack(){
-                        Text ("Informações relevantes:")
+                    VStack {
+                        Text("Informações relevantes:")
                             .font(.headline)
                     }
-                    HStack(alignment: .center){
+                    HStack(alignment: .center) {
                         VStack {
                             Image(systemName: "clock")
                                 .resizable()
                                 .frame(width: 42, height: 42)
                                 .padding(.top)
-                            Text ("Horário")
-                            Text ("18hrs")
+                            Text("Horário")
+                            Text("18hrs")
                                 .padding(.bottom)
                                 .font(.caption)
                         }
@@ -127,8 +127,8 @@ struct EventoHappyHour: View {
                                 .resizable()
                                 .frame(width: 42, height: 42)
                                 .padding(.top)
-                            Text ("Valor")
-                            Text ("O que consumir")
+                            Text("Valor")
+                            Text("O que consumir")
                                 .padding(.bottom)
                                 .font(.caption)
                         }
@@ -170,21 +170,21 @@ struct EventoHappyHour: View {
             .listStyle(.plain)
             .background(Color(uiColor: .secondarySystemBackground))
             .navigationTitle("Happy Hour Academy")
-            .toolbar(content: {
+            .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button(action: {
+                    Button {
                         print("Favoritado")
                         favorited.toggle()
-                    }, label: {
+                    } label: {
                         Image(systemName: "star")
                             .padding(5)
                             .background( Circle()
                                 .fill(.gray)
                                 .opacity(0.3))
                             .foregroundStyle(favorited ? .amarelo : .gray)
-                    })
+                    }
                 }
-            })
+            }
         }
         .presentationDetents([.height(398), .large], selection: $detents)
         
