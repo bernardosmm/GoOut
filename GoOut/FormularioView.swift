@@ -84,7 +84,7 @@ struct FormularioView: View {
                         Text("Endereço")
                             .bold()
                             .foregroundStyle(.gray)
-                        TextField("Av. Treze de Maio, 2081", text: .constant(""))
+                        TextField("Preencha com: Nome do Local, Estado", text: .constant(""))
                             .padding()
                             .background {
                                 RoundedRectangle(cornerRadius: 11)
@@ -195,7 +195,6 @@ struct FormularioView: View {
                 }
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Salvar") {
-                        
                     }
                 }
             }
@@ -207,12 +206,9 @@ struct FormularioView: View {
                 
     }
 }
-
-
 #Preview {
     ContentView()
         .sheet(isPresented: .constant(true)) {
             FormularioView()
         }
 }
-

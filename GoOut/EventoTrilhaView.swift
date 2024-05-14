@@ -88,18 +88,18 @@ struct EventoTrilhaView: View {
                             Trilha2()
                         }
                     }
-                    VStack() {
+                    VStack {
                         Text("Informações relevantes:")
                             .font(.headline)
                     }
-                    HStack(alignment: .center){
+                    HStack(alignment: .center) {
                         VStack {
                             Image(systemName: "clock")
                                 .resizable()
                                 .frame(width: 42, height: 42)
                                 .padding(.top)
-                            Text ("Horário")
-                            Text ("8h - 11h")
+                            Text("Horário")
+                            Text("8h - 11h")
                                 .padding(.bottom)
                                 .font(.caption)
                         }
@@ -127,8 +127,8 @@ struct EventoTrilhaView: View {
                                 .resizable()
                                 .frame(width: 42, height: 42)
                                 .padding(.top)
-                            Text ("Valor")
-                            Text ("Gratuito")
+                            Text("Valor")
+                            Text("Gratuito")
                                 .padding(.bottom)
                                 .font(.caption)
                         }
