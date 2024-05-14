@@ -103,4 +103,3 @@ struct HappyHour2: View {
             .shadow(radius: 1)
     }
 }
-

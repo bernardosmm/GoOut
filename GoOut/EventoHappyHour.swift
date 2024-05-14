@@ -88,11 +88,11 @@ struct EventoHappyHour: View {
                             HappyHour2()
                         }
                     }
-                    VStack(){
+                    VStack() {
                         Text ("Informações relevantes:")
                             .font(.headline)
                     }
-                    HStack(alignment: .center){
+                    HStack(alignment: .center) {
                         VStack {
                             Image(systemName: "clock")
                                 .resizable()

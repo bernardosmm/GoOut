@@ -51,6 +51,12 @@ struct ContentView: View {
                     if tag == 2 {
                         EventoFeiraView()
                     }
+                    if tag == 0 {
+                        Evento()
+                    }
+                    if tag == 3 {
+                        EventoHappyHour()
+                    }
                 }
             }
 //            .safeAreaInset(edge: .bottom) {
@@ -68,7 +74,7 @@ struct ContentView: View {
 //                    }
 //                })
 //            }
-        }
+    }
 //        .presentationDetents([.height(60), .medium, .large], selection: $detents)
     }
 }
