@@ -208,11 +208,9 @@ struct FormularioView: View {
     }
 }
 
-
 #Preview {
     ContentView()
         .sheet(isPresented: .constant(true)) {
             FormularioView()
         }
 }
-

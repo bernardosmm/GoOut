@@ -40,7 +40,11 @@ struct FirstScreen: View {
                         .textCase(nil)
                     }
                     .listRowSeparator(.hidden)
+<<<<<<< HEAD
                 // Início favoritos
+=======
+                    // Início favoritos
+>>>>>>> 8147497 (Correção warnings)
                     Group {
                         Section {
                             VStack {
@@ -64,9 +68,14 @@ struct FirstScreen: View {
                 }
                 .listStyle(.insetGrouped)
                 .opacity(self.detents != .height(60) ? 1 : 0)
+<<<<<<< HEAD
             } 
+=======
+            }
+            .background(Color(uiColor: .systemBackground))
+>>>>>>> 8147497 (Correção warnings)
         }
-        .presentationDetents([.height(60), .medium], selection: $detents)
+        .presentationDetents([.height(60), .medium, .large], selection: $detents)
     }
 }
 
