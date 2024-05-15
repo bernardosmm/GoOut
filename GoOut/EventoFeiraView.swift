@@ -88,7 +88,7 @@ struct EventoFeiraView: View {
                         }
                     }
                     VStack(){
-                        Text ("Informações relevantes:")
+                        Text("Informações relevantes:")
                             .font(.headline)
                     }
                     HStack(alignment: .center){
@@ -97,8 +97,8 @@ struct EventoFeiraView: View {
                                 .resizable()
                                 .frame(width: 42, height: 42)
                                 .padding(.top)
-                            Text ("Horário")
-                            Text ("8h - 12h")
+                            Text("Horário")
+                            Text("8h - 12h")
                                 .padding(.bottom)
                                 .font(.caption)
                         }
@@ -126,8 +126,8 @@ struct EventoFeiraView: View {
                                 .resizable()
                                 .frame(width: 42, height: 42)
                                 .padding(.top)
-                            Text ("Valor")
-                            Text ("Gratuito")
+                            Text("Valor")
+                            Text("Gratuito")
                                 .padding(.bottom)
                                 .font(.caption)
                         }
