@@ -188,7 +188,6 @@ struct Evento: View {
             })
         }
         .presentationDetents([.height(398), .large], selection: $detents)
-        
     }
 }
 
