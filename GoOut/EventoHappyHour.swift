@@ -89,7 +89,7 @@ struct EventoHappyHour: View {
                         }
                     }
                     VStack() {
-                        Text ("Informações relevantes:")
+                        Text("Informações relevantes:")
                             .font(.headline)
                     }
                     HStack(alignment: .center) {
@@ -98,8 +98,8 @@ struct EventoHappyHour: View {
                                 .resizable()
                                 .frame(width: 42, height: 42)
                                 .padding(.top)
-                            Text ("Horário")
-                            Text ("18hrs")
+                            Text("Horário")
+                            Text("18hrs")
                                 .padding(.bottom)
                                 .font(.caption)
                         }
@@ -127,8 +127,8 @@ struct EventoHappyHour: View {
                                 .resizable()
                                 .frame(width: 42, height: 42)
                                 .padding(.top)
-                            Text ("Valor")
-                            Text ("O que consumir")
+                            Text("Valor")
+                            Text("O que consumir")
                                 .padding(.bottom)
                                 .font(.caption)
                         }

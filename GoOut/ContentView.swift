@@ -35,16 +35,16 @@ struct ContentView: View {
                 //            ForEach(locations) { location in
                 Marker(locations[2].name, coordinate: locations[2].coordinate)
                     .tag(locations.index(2, offsetBy: 0))
-                    .tint(.green)
+                    .tint(Color.verdee)
                 Marker(locations[3].name, coordinate: locations[3].coordinate)
                     .tag(locations.index(3, offsetBy: 0))
-                    .tint(.green)
+                    .tint(Color.verdee)
                 Marker(locations[1].name, coordinate: locations[1].coordinate)
                     .tag(locations.index(1, offsetBy: 0))
-                    .tint(.blue)
+                    .tint(Color.laranjaa)
                 Marker(locations[0].name, coordinate: locations[0].coordinate)
                     .tag(locations.index(0, offsetBy: 0))
-                    .tint(.green)
+                    .tint(Color.verdee)
                 //                        }
             }
             .sheet(item: $selectedTag) { tag in
@@ -63,26 +63,10 @@ struct ContentView: View {
                     }
                 }
             }
-            //            .safeAreaInset(edge: .bottom) {
-            //                VStack(spacing: 0, content: {
-            //                    if let selectedTag {
-            //                        Button("testea") {
-            //                            print(selectedTag)
-            //                        }
-            //                        if selectedTag == 1 {
-            //                            EventoTrilhaView()
-            //                        }
-            //                        if selectedTag == 2 {
-            //                            EventoFeiraView()
-            //                        }
-            //                    }
-            //                })
-            //            }
         }
-        //        .presentationDetents([.height(60), .medium, .large], selection: $detents)
     }
 }
 
 #Preview {
-    ContentView() // View do Bernardo com Pedro
+    ContentView()
 }

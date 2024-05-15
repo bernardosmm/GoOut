@@ -88,18 +88,18 @@ struct Evento: View {
                             Caiaque2()
                         }
                     }
-                    VStack(){
-                        Text ("Informações relevantes:")
+                    VStack() {
+                        Text("Informações relevantes:")
                             .font(.headline)
                     }
-                    HStack(alignment: .center){
+                    HStack(alignment: .center) {
                         VStack {
                             Image(systemName: "clock")
                                 .resizable()
                                 .frame(width: 42, height: 42)
                                 .padding(.top)
-                            Text ("Horário")
-                            Text ("15h - 17h")
+                            Text("Horário")
+                            Text("15h - 17h")
                                 .padding(.bottom)
                                 .font(.caption)
                         }
@@ -127,8 +127,8 @@ struct Evento: View {
                                 .resizable()
                                 .frame(width: 42, height: 42)
                                 .padding(.top)
-                            Text ("Valor")
-                            Text ("R$ 20 - 40")
+                            Text("Valor")
+                            Text("R$ 20 - 40")
                                 .padding(.bottom)
                                 .font(.caption)
                         }
