@@ -40,7 +40,7 @@ struct FirstScreen: View {
                         .textCase(nil)
                     }
                     .listRowSeparator(.hidden)
-                // Início favoritos
+                    // Início favoritos
                     Group {
                         Section {
                             VStack {
@@ -64,9 +64,13 @@ struct FirstScreen: View {
                 }
                 .listStyle(.insetGrouped)
                 .opacity(self.detents != .height(60) ? 1 : 0)
-            } 
+            }
+            .scrollContentBackground(.hidden)
+            .background(Color(uiColor: .secondarySystemBackground))
         }
-        .presentationDetents([.height(60), .medium], selection: $detents)
+        .interactiveDismissDisabled()
+        .presentationDetents([.height(60), .medium, .large], selection: $detents)
+        .presentationBackgroundInteraction(.enabled(upThrough: .height(60)))
     }
 }
 

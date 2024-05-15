@@ -12,7 +12,6 @@ import MapKit
 struct SearchBar: View {
     
     @Binding var searchText: String
-        
     @FocusState var isFocused: Bool
     
     var body: some View {
