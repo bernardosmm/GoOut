@@ -30,28 +30,52 @@ struct ContentView: View {
         )
     )
     var body: some View {
-        Map(selection: $selectedTag) {
-            //            ForEach(locations) { location in
-            Marker(locations[2].name, coordinate: locations[2].coordinate)
-                .tag(locations.index(2, offsetBy: 0))
-            Marker(locations[3].name, coordinate: locations[3].coordinate)
-                .tag(locations.index(3, offsetBy: 0))
-            Marker(locations[1].name, coordinate: locations[1].coordinate)
-                .tag(locations.index(1, offsetBy: 0))
-            Marker(locations[0].name, coordinate: locations[0].coordinate)
-                .tag(locations.index(0, offsetBy: 0))
-            //                        }
-        }
-        .sheet(item: $selectedTag) { tag in
-            Group {
-                if tag == 1 {
-                    EventoTrilhaView()
-                }
-                if tag == 2 {
-                    EventoFeiraView()
+        NavigationStack {
+            Map(selection: $selectedTag) {
+                //            ForEach(locations) { location in
+                Marker(locations[2].name, coordinate: locations[2].coordinate)
+                    .tag(locations.index(2, offsetBy: 0))
+                Marker(locations[3].name, coordinate: locations[3].coordinate)
+                    .tag(locations.index(3, offsetBy: 0))
+                Marker(locations[1].name, coordinate: locations[1].coordinate)
+                    .tag(locations.index(1, offsetBy: 0))
+                Marker(locations[0].name, coordinate: locations[0].coordinate)
+                    .tag(locations.index(0, offsetBy: 0))
+                //                        }
+            }
+            .sheet(item: $selectedTag) { tag in
+                Group {
+                    if tag == 1 {
+                        EventoTrilhaView()
+                    }
+                    if tag == 2 {
+                        EventoFeiraView()
+                    }
+                    if tag == 0 {
+                        Evento()
+                    }
+                    if tag == 3 {
+                        EventoHappyHour()
+                    }
                 }
             }
-        }
+//            .safeAreaInset(edge: .bottom) {
+//                VStack(spacing: 0, content: {
+//                    if let selectedTag {
+//                        Button("testea") {
+//                            print(selectedTag)
+//                        }
+//                        if selectedTag == 1 {
+//                            EventoTrilhaView()
+//                        }
+//                        if selectedTag == 2 {
+//                            EventoFeiraView()
+//                        }
+//                    }
+//                })
+//            }
+    }
+//        .presentationDetents([.height(60), .medium, .large], selection: $detents)
     }
 }
 
