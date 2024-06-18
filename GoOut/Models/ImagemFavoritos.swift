@@ -21,16 +21,16 @@ struct FavoritosImage: View {
                         .foregroundStyle(.fill)
                         .frame(width: 85, height: 85)
                 )
-                
-                Text("Adicionar")
-                    .font(.system(size: 20))
+            
+            Text("Adicionar")
+                .font(.system(size: 20))
         }
     }
 }
 
 #Preview {
-    ContentView() // View do Bernardo com Pedro
+    ContentView()
         .sheet(isPresented: .constant(true)) {
-            FirstScreen(searchText: .constant("")) // Minha View
+            FirstScreen(searchText: .constant("")) 
         }
 }

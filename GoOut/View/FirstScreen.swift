@@ -12,7 +12,7 @@ import MapKit  // Importando biblioteca do mapa
 struct FirstScreen: View {
     
     @State var flag: Bool = false
-    @State var detents: PresentationDetent = .medium//.height(60)
+    @State var detents: PresentationDetent = .height(60)
     @Binding var searchText: String
     
     var body: some View {
@@ -24,7 +24,7 @@ struct FirstScreen: View {
                     Group {
                         Section {
                             VStack {
-                                CircleImage()
+ //                               CircleImage()
                             } .padding(10)
                         } header: {
                             HStack {
@@ -75,8 +75,8 @@ struct FirstScreen: View {
 }
 
 #Preview {
-    ContentView() // View do Bernardo com Pedro
+    ContentView()
         .sheet(isPresented: .constant(true)) {
-            FirstScreen(searchText: .constant("")) // Minha View
+            FirstScreen(searchText: .constant(""))
         }
 }
