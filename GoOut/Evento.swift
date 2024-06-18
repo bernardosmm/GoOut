@@ -88,7 +88,7 @@ struct Evento: View {
                             Caiaque2()
                         }
                     }
-                    VStack {
+                    VStack() {
                         Text("Informações relevantes:")
                             .font(.headline)
                     }

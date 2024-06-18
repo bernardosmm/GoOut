@@ -88,7 +88,7 @@ struct EventoTrilhaView: View {
                             Trilha2()
                         }
                     }
-                    VStack {
+                    VStack() {
                         Text("Informações relevantes:")
                             .font(.headline)
                     }

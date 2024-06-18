@@ -87,7 +87,7 @@ struct EventoFeiraView: View {
                             Feira2()
                         }
                     }
-                    VStack {
+                    VStack() {
                         Text("Informações relevantes:")
                             .font(.headline)
                     }
