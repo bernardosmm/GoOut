@@ -24,7 +24,6 @@ struct FirstScreen: View {
                     Group {
                         Section {
                             VStack {
- //                               CircleImage()
                             } .padding(10)
                         } header: {
                             HStack {
